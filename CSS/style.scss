@@ -1,0 +1,36 @@
+body{
+	color: red;
+}
+
+header{
+	// background-color: #3A9FDC;
+	// border: black solid 1px;
+	
+		.sort_box {
+		display: inline-block;
+		float: left;
+		border: black 1px solid;
+		}
+
+		.sort_box {
+			.sort_options p{
+			display: inline-block;
+			}
+			.flight_display {
+				// float: right;
+				p{
+					display: inline-block;
+				}
+		}
+
+		}
+
+		.flight_display{
+			float: right;
+		}
+}
+
+header .sort_box{
+	// display: inline-block;
+	// border: black 1px solid;
+}
