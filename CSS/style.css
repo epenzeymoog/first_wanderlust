@@ -1,0 +1,287 @@
+body {
+  color: white;
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 12px; }
+
+.top_third {
+	overflow: auto;
+	height: 60em;
+	background: url("../images/wanderlust_hero.png") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	background-position: center;
+}
+
+nav{
+	margin: 1%;
+}
+
+.top_third .left_nav{
+	float: left;
+	display: flex;
+}
+
+.top_third .right_nav{
+	float: right;
+}
+
+.top_third .right_nav .icon{
+	margin-right: 10px;
+}
+
+.top_third nav .left_nav .logo{
+	width: 5%;
+	height: 8%;
+}
+
+.top_third nav .right_nav .icon{
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+}
+
+nav h1{
+	display: inline-block;
+	color: white;
+	font-size: 3em;
+	letter-spacing: 3px;
+}
+
+h1{
+	padding: 1% 0% 0% 2%;
+}
+
+h2{
+	color: white;
+	padding: 17% 28%;
+	width: 52%;
+	font-size: 7em;
+	letter-spacing: 3px;
+	margin-left: 0;
+	text-align: center;
+}
+
+.middle_third{
+	height: 27em;
+	width: 95%;
+	padding: 3% 5% 3% 5%;
+}
+
+.middle_third .promotion{
+	width: 30%;
+	display: inline-block;
+	background-color: rgba(141, 143, 144, 0.53);
+	margin-right: 2%;
+}
+
+.middle_third .promotion p{
+	width: 82%;
+	display: inline-block;
+	color: white;
+	font-size: 1.8em;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	height: 60px;
+	padding-left: 41px;
+	padding-top: 3%;
+	line-height: 25px;
+}
+
+.middle_third .promotion img{
+	width: 100%;
+	border: white 1px solid;
+	/*padding: 1% 1% 0 1%;*/
+}
+
+.middle_third .promotion:last-child{
+	margin-right: none;
+}
+
+.bottom_third {
+	overflow: auto;
+	height: 60em;
+	background: url("../images/havana.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	background-position: bottom center;
+}
+
+.bottom_third .bottom_third_text{
+	color: white;
+	padding-top: 12%;
+	padding-left: 2%;
+	text-align: center;
+}
+
+h3{
+	font-size: 14em;
+	letter-spacing: 5px;
+}
+
+.bottom_third p{
+	font-family: 'Josefin Slab', serif;
+	font-weight: 300;
+	font-size: 2.1em;
+}
+
+.green_button{
+	height: 6%;
+	/*border: white solid 1px;*/
+	background-color: #87D035;
+	width: 12%;
+	border-radius: 3px;
+	margin-left: 43%;
+	margin-top: 1%;
+}
+
+.green_button p{
+	font-size: 2em;
+	text-align: center;
+	padding: 8px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+}
+
+
+footer{
+	background-color: rgba(141, 143, 144, 0.53);
+	text-align: center;
+	margin-top: 2px;
+}
+
+footer .footer_links p{
+	padding-top: 20px;
+	padding-right: 20px;
+}
+
+footer p{
+		display: inline-block;
+		font-size: 1.4em;
+		font-family: 'Lato', sans-serif;
+		font-weight: 100;
+		padding-bottom: 20px;
+}
+
+/*<!-- TAB SECTION ///////////////////////////////////////// -->*/
+
+.tabs {
+  position: relative;   
+  min-height: 200px; /* This part sucks */
+  clear: both;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: black; 
+  padding: 10px 30px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+  font-family: 'Lato';
+  font-weight: 100;
+  font-size: 1.4em;
+}
+.tab [type=radio] {
+  display: none;   
+}
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: #c2c3c4;
+  right: 0;
+  bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc; 
+  font-family: 'Lato';
+  font-weight: 100;
+}
+
+.content p{
+	display: inline-block;
+	font-size: 1.6em;
+	padding-right: 30px;
+}
+
+[type=radio]:checked ~ label {
+  background: grey;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
+
+.choice_button{
+	display: inline-block;
+	padding-top: 15px;
+}
+
+.button {
+    background-color: #ffffff;
+    border: none;
+    color: black;
+    padding: 9px 30px 9px 10px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 1px 2px 10px grey;
+}
+
+.city, .where, .room, .search{
+	padding-right: 7%;
+}
+
+.search{
+	background-color: #87D035;
+	color: white;	
+}
+
+
+/*<!-- TAB SECTION ///////////////////////////////////////// -->*/
+
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (max-width: 1024px) {
+  .middle_third{
+    height: 23em;
+}
+  .middle_third .promotion p{
+    width: 94%;
+    font-size: 1.2em;
+    padding-left: 12px;
+  }
+  .green_button{
+    width: 20%;
+  }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (max-width: 790px){
+  h2{
+    font-size: 5em;
+  }
+  .middle_third{
+    height: 21em;
+  }
+  .middle_third .promotion{
+    width: 28%;
+  }
+  .middle_third .promotion p{
+    font-size: 1em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

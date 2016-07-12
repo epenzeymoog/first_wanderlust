@@ -1,26 +1,148 @@
 <DOCTYPE html>
 <html lang="en">
 	<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="shortcut icon" href="./images/backpack.ico">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" href="CSS/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Amatic+SC:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Josefin+Slab:400,300,100,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:100,400,300' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust</title>
 	</head>
 
 <body>
-	<header class="blue_box">
-		<span class="sort_box">
-			<section class="sort_options">
-				<p class="sort_by">Sort by</p>
-				<p class="sort_choice">price</p>
-				<p class="sort_choice">duration</p>
-				<p class="sort_choice">more</p>
-			</section>
 
-			<section class="flight_display">
-				<p class="trip_choice">round-trip</p>
-				<p class="trip_choice">flight-by-flight</p>
-			</section>
-		</span>
-	</header>
+<section class="top_third">
+  <nav>
+    <section class = "left_nav">
+      <img class="logo" src="./images/backpack_icon.png" alt="backpack_icon">
+      <h1>WANDERLUST</h1>
+    </section>
 
+    <section class = "right_nav">
+      <img class="icon" src="./images/search_icon.png" alt="search_icon">
+      <img class="icon" src="./images/menu_icon.png" alt="menu_icon">
+    </section>
+  </nav>
+
+  <h2>unleash your inner explorer.</h2>
+
+
+<!-- TAB SECTION ///////////////////////////////////////// -->
+
+
+
+
+<div class="tabs">
+    
+   <div class="tab">
+       <input type="radio" id="tab-1" name="tab-group-1" checked>
+       <label for="tab-1">FLIGHTS</label>
+       
+       <div class="content">
+           <p>round trip</p>
+           <p>one-way</p>
+           <p>multi-city</p>
+           <p>show flexible dates</p>
+
+        <section class="choice_buttons">   
+           <button class="button city">CHI</button>
+           <button class="button city">TO</button>
+           <button class="button calendar">5/19</button>
+           <button class="button calendar">5/21</button>
+           <button class="button economy">1, economy</button>
+           <button class="button search">search</button>
+        </section>
+       </div> 
+   </div>
+    
+   <div class="tab">
+       <input type="radio" id="tab-2" name="tab-group-1">
+       <label for="tab-2">LODGING</label>
+       
+       <div class="content">
+       <p> /</p>
+
+        <section class="choice_buttons">   
+           <button class="button where">Where</button>
+           <button class="button calendar">5/19</button>
+           <button class="button calendar">5/21</button>
+           <button class="button room">1 room, 2 guests</button>
+           <button class="button search">search</button>
+        </section>
+      </div> 
+   </div>
+    
+    <div class="tab">
+       <input type="radio" id="tab-3" name="tab-group-1">
+       <label for="tab-3">CARS</label>
+     
+       <div class="content">
+           <p>same drop-off</p>
+           <p>different drop-off</p>
+
+        <section class="choice_buttons">   
+           <button class="button where">Where</button>
+           <button class="button calendar">5/19</button>
+           <button class="button calendar">5/21</button>
+           <button class="button time">noon</button>
+           <button class="button search">search</button>
+        </section>           
+       </div> 
+   </div>
+    
+</div>
+
+
+
+<!-- END TAB SECTION ///////////////////////////////////////// -->
+
+
+
+
+
+</section>
+
+<section class="middle_third">
+
+  <section class="promotion">
+    <img src="./images/airplane.png" alt="menu_icon">
+    <p>Flexible departure? Compare prices to nearby dates.</p>
+  </section>
+
+  <section class="promotion">
+    <img src="./images/bike.png" alt="menu_icon">
+    <p>From big name and boutique hotels to airbnb, find your perfect rental.</p>
+  </section>
+
+  <section class="promotion">
+    <img src="./images/van.png" alt="menu_icon">
+    <p>Find the best rental car, train, bus or ferry to keep you moving</p>
+  </section>
+
+</section>
+
+<section class="bottom_third">
+  <section class="bottom_third_text">
+    <h3>havana, at last</h3>
+    <p>we have the deals to get you there.</p>
+      <section class="green_button">
+        <p>browse deals</p>
+      </section>
+  </section>
+</section>
+
+<footer>
+  <section class="footer_links">
+    <p>About</p>
+    <p>Contact</p>
+    <p>Privacy</p>
+    <p>Help</p>
+  </section>
+  <p id="copyright"> &copy; 2016 Wanderlust Inc.</p>
+</footer>
 
 </body>
 

@@ -1,0 +1,15 @@
+body {
+  color: red; }
+
+header .sort_box {
+  display: inline-block;
+  float: left;
+  border: black 1px solid; }
+header .sort_box .sort_options p {
+  display: inline-block; }
+header .sort_box .flight_display p {
+  display: inline-block; }
+header .flight_display {
+  float: right; }
+
+/*# sourceMappingURL=style.css.map */
