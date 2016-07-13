@@ -14,7 +14,7 @@ body {
 
 .top_third {
 	overflow: hidden;
-	height: 60em;
+	/*height: 60em;*/
 	background: url("../images/wanderlust_hero.png") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -86,14 +86,20 @@ body {
 
 /*<!-- TAB SECTION ///////////////////////////////////////// -->*/
 
-.tabs {
-  position: absolute;   
-  min-height: 200px; /* This part sucks */
-  clear: both;
+.tab-container {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+  background: grey;
 }
-.tab {
-  float: left;
-}
+
 .tab label {
   background: black; 
   padding: 10px 30px; 
@@ -108,8 +114,7 @@ body {
 .tab [type=radio] {
   display: none;   
 }
-.content {
-  position: absolute;
+.tab-content {
   top: 28px;
   left: 0;
   background: #c2c3c4;
@@ -121,10 +126,8 @@ body {
   font-weight: 100;
 }
 
-.content p{
-  display: inline-block;
-  font-size: 1.6em;
-  padding-right: 30px;
+.tab-content .tab-container li{
+  padding: 5px 10px;
 }
 
 [type=radio]:checked ~ label {
@@ -137,7 +140,6 @@ body {
 }
 
 .choice_button{
-  display: inline-block;
   padding-top: 15px;
 }
 
@@ -148,7 +150,6 @@ body {
     padding: 9px 30px 9px 10px;
     text-align: left;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
