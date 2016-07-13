@@ -1,10 +1,19 @@
+/*@import "compass/css3";*/
+
+* {
+	outline: 2px red solid;
+}
+
 body {
   color: white;
   font-family: 'Amatic SC', sans-serif;
   font-size: 12px; }
 
+
+/*Start top third/////////////////////////////////*/
+
 .top_third {
-	overflow: auto;
+	overflow: hidden;
 	height: 60em;
 	background: url("../images/wanderlust_hero.png") no-repeat center center;
     -webkit-background-size: cover;
@@ -12,166 +21,73 @@ body {
     -o-background-size: cover;
 	background-size: cover;
 	width: 100%;
-	background-position: center;
 }
 
-nav{
-	margin: 1%;
+.flex-container-nav{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  -webkit-flex-flow: row wrap;
 }
 
-.top_third .left_nav{
-	float: left;
-	display: flex;
+.left-nav{
+  float: left;
+}
+.right-nav{
+  float: right;
 }
 
-.top_third .right_nav{
-	float: right;
+.logo{
+  margin: 10px 2px 10px 20px;
 }
 
-.top_third .right_nav .icon{
-	margin-right: 10px;
+.icon:last-child{
+  margin: 10px 20px;
 }
 
-.top_third nav .left_nav .logo{
-	width: 5%;
-	height: 8%;
+.left-nav .flex-container-nav li p img{
+  vertical-align: middle;
 }
 
-.top_third nav .right_nav .icon{
+.left-nav .flex-container-nav li p{
+  font-size: 2em;
+  font-family: "Amatic SC";
+  font-weight: 400;
+}
+
+.top_third .left-nav .flex-container-nav .logo{
+  width: 40px;
+  height: 60px;
+}
+
+.top_third .right-nav .flex-container-nav .icon{
 	width: 40px;
 	height: 40px;
-	margin-left: 10px;
 }
 
-nav h1{
-	display: inline-block;
-	color: white;
-	font-size: 3em;
-	letter-spacing: 3px;
-}
-
-h1{
-	padding: 1% 0% 0% 2%;
-}
-
-h2{
+.top_third h2{
 	color: white;
 	padding: 17% 28%;
 	width: 52%;
-	font-size: 7em;
+	font-size: 5em;
 	letter-spacing: 3px;
 	margin-left: 0;
 	text-align: center;
+  font-family: "Amatic SC";
+  font-weight: 400;
 }
 
-.middle_third{
-	height: 27em;
-	width: 95%;
-	padding: 3% 5% 3% 5%;
-}
-
-.middle_third .promotion{
-	width: 30%;
-	display: inline-block;
-	background-color: rgba(141, 143, 144, 0.53);
-	margin-right: 2%;
-}
-
-.middle_third .promotion p{
-	width: 82%;
-	display: inline-block;
-	color: white;
-	font-size: 1.8em;
-	font-family: 'Lato', sans-serif;
-	font-weight: 100;
-	height: 60px;
-	padding-left: 41px;
-	padding-top: 3%;
-	line-height: 25px;
-}
-
-.middle_third .promotion img{
-	width: 100%;
-	border: white 1px solid;
-	/*padding: 1% 1% 0 1%;*/
-}
-
-.middle_third .promotion:last-child{
-	margin-right: none;
-}
-
-.bottom_third {
-	overflow: auto;
-	height: 60em;
-	background: url("../images/havana.jpg") no-repeat center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-	background-size: cover;
-	width: 100%;
-	background-position: bottom center;
-}
-
-.bottom_third .bottom_third_text{
-	color: white;
-	padding-top: 12%;
-	padding-left: 2%;
-	text-align: center;
-}
-
-h3{
-	font-size: 14em;
-	letter-spacing: 5px;
-}
-
-.bottom_third p{
-	font-family: 'Josefin Slab', serif;
-	font-weight: 300;
-	font-size: 2.1em;
-}
-
-.green_button{
-	height: 6%;
-	/*border: white solid 1px;*/
-	background-color: #87D035;
-	width: 12%;
-	border-radius: 3px;
-	margin-left: 43%;
-	margin-top: 1%;
-}
-
-.green_button p{
-	font-size: 2em;
-	text-align: center;
-	padding: 8px;
-	font-family: 'Lato', sans-serif;
-	font-weight: 100;
-}
-
-
-footer{
-	background-color: rgba(141, 143, 144, 0.53);
-	text-align: center;
-	margin-top: 2px;
-}
-
-footer .footer_links p{
-	padding-top: 20px;
-	padding-right: 20px;
-}
-
-footer p{
-		display: inline-block;
-		font-size: 1.4em;
-		font-family: 'Lato', sans-serif;
-		font-weight: 100;
-		padding-bottom: 20px;
-}
 
 /*<!-- TAB SECTION ///////////////////////////////////////// -->*/
 
 .tabs {
-  position: relative;   
+  position: absolute;   
   min-height: 200px; /* This part sucks */
   clear: both;
 }
@@ -206,9 +122,9 @@ footer p{
 }
 
 .content p{
-	display: inline-block;
-	font-size: 1.6em;
-	padding-right: 30px;
+  display: inline-block;
+  font-size: 1.6em;
+  padding-right: 30px;
 }
 
 [type=radio]:checked ~ label {
@@ -221,8 +137,8 @@ footer p{
 }
 
 .choice_button{
-	display: inline-block;
-	padding-top: 15px;
+  display: inline-block;
+  padding-top: 15px;
 }
 
 .button {
@@ -241,47 +157,166 @@ footer p{
 }
 
 .city, .where, .room, .search{
-	padding-right: 7%;
+  padding-right: 7%;
 }
 
 .search{
-	background-color: #87D035;
-	color: white;	
+  background-color: #87D035;
+  color: white; 
 }
 
 
 /*<!-- TAB SECTION ///////////////////////////////////////// -->*/
 
 
+/*End top third/////////////////////////////////*/
+
+/*Start middle third/////////////////////////////////*/
+
+.middle_third{
+	/*height: 27em;*/
+	padding: 3% 5% 3% 5%;
+  display: 
+}
+
+.middle_third .big-middle-container{
+  padding: 0;
+  margin: 0 0px;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
+.middle_third .big-middle-container .deal-flex-container{
+  flex-flow: column wrap;
+  margin: 10px 10px;
+}
+
+.middle_third .big-middle-container .deal-flex-container img{
+  width: 400px;
+  height: 250px;
+}
+
+.middle_third .big-middle-container .deal-flex-container p{
+  color: white;
+  width: 380px;
+  height: 120px;
+  background: grey;
+  font-family: "Lato";
+  font-weight: 100;
+  font-size: 1.7em;
+  padding-top: 15px;
+  padding-left: 13px;
+  padding-right: 7px;
+}
+
+
+/*End middle third/////////////////////////////////*/
+
+
+
+/*Start bottom third/////////////////////////////////*/
+.bottom_third {
+	overflow: hidden;
+	/*height: 50em;*/
+	background: url("../images/havana.jpg") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	background-position: bottom center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom_third .big-bottom-container{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 100px 100px;
+}
+
+.bottom_third .big-bottom-container li h3{
+  font-size: 14em;
+  letter-spacing: 5px;  
+	text-align: center;
+  font-family: 'Amatic SC';
+  font-weight: 100;
+}
+
+.bottom_third .big-bottom-container li p{
+	font-family: 'Josefin Slab', serif;
+	font-weight: 300;
+	font-size: 2.1em;
+  text-align: center;
+}
+
+.bottom_third .big-bottom-container .green-button{
+	height: 6%;
+}
+
+.bottom_third .big-bottom-container .green-button p{
+	font-size: 2em;
+	text-align: center;
+	padding: 8px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+  border: white 1px solid;
+  border-radius: 3px;
+  width: 200px;
+  background-color: #87D035;
+}
+
+/*End bottom third/////////////////////////////////*/
+
+footer{
+	background-color: rgba(141, 143, 144, 0.53);
+	text-align: center;
+	margin-top: 2px;
+}
+
+.footer-container{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: center;
+}
+
+footer p{
+		font-size: 1.4em;
+		font-family: 'Lato', sans-serif;
+		font-weight: 100;
+    padding: 10px 0;
+}
+
+footer .footer-container li:not(:last-child){
+   margin-right: 25px;
+}
+
+
 /* iPads (portrait and landscape) ----------- */
 
-@media only screen and (max-width: 1024px) {
-  .middle_third{
-    height: 23em;
-}
-  .middle_third .promotion p{
-    width: 94%;
-    font-size: 1.2em;
-    padding-left: 12px;
-  }
-  .green_button{
-    width: 20%;
-  }
-}
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (max-width: 790px){
-  h2{
-    font-size: 5em;
-  }
-  .middle_third{
-    height: 21em;
-  }
-  .middle_third .promotion{
-    width: 28%;
-  }
-  .middle_third .promotion p{
-    font-size: 1em;
-  }
-}
+
 
 /*# sourceMappingURL=style.css.map */

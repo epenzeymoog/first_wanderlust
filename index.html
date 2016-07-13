@@ -10,32 +10,34 @@
     <link href='https://fonts.googleapis.com/css?family=Lato:100,400,300' rel='stylesheet' type='text/css'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wanderlust</title>
+  <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
 	</head>
 
 <body>
 
-<section class="top_third">
-  <nav>
-    <section class = "left_nav">
-      <img class="logo" src="./images/backpack_icon.png" alt="backpack_icon">
-      <h1>WANDERLUST</h1>
-    </section>
+<!-- Start top third/////////////////////////// -->
 
-    <section class = "right_nav">
-      <img class="icon" src="./images/search_icon.png" alt="search_icon">
-      <img class="icon" src="./images/menu_icon.png" alt="menu_icon">
-    </section>
+<section class="top_third">
+
+  <nav class="left-nav">
+    <ul class="flex-container-nav">
+      <li><p><img class="logo" src="./images/backpack_icon.png" alt="backpack_icon">WANDERLUST</p></li>
+    </ul>
+  </nav>
+
+  <nav class="right-nav">
+    <ul class="flex-container-nav">
+      <li><img class="icon" src="./images/search_icon.png" alt="search_icon"></li>
+      <li><img class="icon" src="./images/menu_icon.png" alt="menu_icon"></li>
+    </ul>
   </nav>
 
   <h2>unleash your inner explorer.</h2>
 
 
 <!-- TAB SECTION ///////////////////////////////////////// -->
-
-
-
-
-<div class="tabs">
+<!-- <div class="tabs">
     
    <div class="tab">
        <input type="radio" id="tab-1" name="tab-group-1" checked>
@@ -93,55 +95,58 @@
        </div> 
    </div>
     
-</div>
-
-
-
+</div> -->
 <!-- END TAB SECTION ///////////////////////////////////////// -->
-
-
-
-
-
 </section>
+
+<!-- end top third/////////////////////////// -->
+
+
+<!-- Start middle third/////////////////////////// -->
 
 <section class="middle_third">
 
-  <section class="promotion">
-    <img src="./images/airplane.png" alt="menu_icon">
-    <p>Flexible departure? Compare prices to nearby dates.</p>
-  </section>
+<div class="big-middle-container">
+  <ul class="deal-flex-container">
+    <li><img src="./images/airplane.png" alt="menu_icon"></li>
+    <li><p>Flexible departure? Compare prices to nearby dates.</p></li>
+  </ul>
 
-  <section class="promotion">
-    <img src="./images/bike.png" alt="menu_icon">
-    <p>From big name and boutique hotels to airbnb, find your perfect rental.</p>
-  </section>
+  <ul class="deal-flex-container">
+    <li><img src="./images/bike.png" alt="menu_icon"></li>
+    <li><p>From big name and boutique hotels to airbnb, find your perfect rental.</p></li>
+  </ul>
 
-  <section class="promotion">
-    <img src="./images/van.png" alt="menu_icon">
-    <p>Find the best rental car, train, bus or ferry to keep you moving</p>
-  </section>
+  <ul class="deal-flex-container">
+    <li><img src="./images/van.png" alt="menu_icon"></li>
+    <li><p>Find the best rental car, train, bus or ferry to keep you moving</p></li>
+  </ul>
+</div>
 
 </section>
+<!-- end middle third/////////////////////////// -->
 
+
+<!-- Start bottom third/////////////////////////// -->
 <section class="bottom_third">
-  <section class="bottom_third_text">
-    <h3>havana, at last</h3>
-    <p>we have the deals to get you there.</p>
-      <section class="green_button">
-        <p>browse deals</p>
-      </section>
-  </section>
+  <ul class="big-bottom-container">
+    <li><h3>havana, at last</h3></li>
+    <li><p>we have the deals to get you there.</p></li>
+    <li class="green-button"><p>browse deals</p></li>
+  </ul>
 </section>
+<!-- end middle third/////////////////////////// -->
 
 <footer>
-  <section class="footer_links">
-    <p>About</p>
-    <p>Contact</p>
-    <p>Privacy</p>
-    <p>Help</p>
-  </section>
-  <p id="copyright"> &copy; 2016 Wanderlust Inc.</p>
+  <ul class="footer-container">
+    <li><p>About</p></li>
+    <li><p>Contact</p></li>
+    <li><p>Privacy</p></li>
+    <li><p>Help</p></li>
+  </ul>
+  <ul class="footer-container">
+    <li><p id="copyright"> &copy; 2016 Wanderlust Inc.</p></li>
+  </ul>
 </footer>
 
 </body>
