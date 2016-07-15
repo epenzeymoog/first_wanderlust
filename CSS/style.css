@@ -108,18 +108,19 @@ input {
   display: none;
 }
 
-label {
+.tabs label {
   display: inline-block;
   background: grey;
   color: white;
-  padding: 10px 30px; 
+  padding: 0; 
   border: 1px solid #ccc; 
-  margin-left: -1px; 
+  /*margin-left: -1px; */
   left: 1px; 
   bottom: 0px;
   font-family: 'Lato';
   font-weight: 100;
   font-size: 1.4em;
+  float: left;
 }
 
 label p{
@@ -133,12 +134,7 @@ label p{
   display: none;
   padding: 20px 0 0;
   border-top: 1px solid #ddd;
-}
-
-label:before {
-  font-family: fontawesome;
-  font-weight: normal;
-  margin-right: 10px;
+  clear: both;
 }
 
 .tab-container{
@@ -159,6 +155,10 @@ label:before {
   padding-right: 25px;
   padding-left: 15px;
 }
+
+.tab-content .tab-container #hidden li p{
+  color: hsla(195, 195%, 195%, 0.00);
+  }
 
 .button {
     background-color: #ffffff;
@@ -251,16 +251,21 @@ input:checked + label {
   margin: 10px 10px;
 }
 
+.middle_third .big-middle-container .deal-flex-container li{
+  vertical-align: top;
+}
+
 .middle_third .big-middle-container .deal-flex-container img{
   width: 400px;
   height: 250px;
+  vertical-align: bottom;
 }
 
 .middle_third .big-middle-container .deal-flex-container p{
   color: white;
   width: 380px;
-  height: 120px;
-  background: grey;
+  height: 100px;
+  background: #a8a8a8;
   font-family: "Lato";
   font-weight: 100;
   font-size: 1.7em;
@@ -269,6 +274,49 @@ input:checked + label {
   padding-right: 7px;
 }
 
+@media screen and (max-width: 1400px){
+  .middle_third .big-middle-container .deal-flex-container img{
+    width: 300px;
+    height: 150px;
+  }
+  .middle_third .big-middle-container .deal-flex-container p{
+    width: 280px;
+    height: 100px;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 1067px){
+  .middle_third .big-middle-container .deal-flex-container img{
+    width: 250px;
+    height: 100px;
+  }
+  .middle_third .big-middle-container .deal-flex-container p{
+    width: 230px;
+    height: 50px;
+    font-size: 1em;
+    padding: 6px 12px 5px 8px;
+  }
+}
+
+
+@media screen and (max-width: 900px){
+  .middle_third .big-middle-container{
+  -webkit-flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+  .middle_third .big-middle-container .deal-flex-container img{
+    width: 450px;
+    height: 300px;
+  }
+  .middle_third .big-middle-container .deal-flex-container p{
+    width: 430px;
+    height: 100px;
+    font-size: 2em;
+    padding: 6px 12px 5px 8px;
+  }
+}
 
 /*End middle third/////////////////////////////////*/
 
@@ -322,6 +370,7 @@ input:checked + label {
 
 .bottom_third .big-bottom-container .green-button{
 	height: 6%;
+  margin-top: 20px;
 }
 
 .bottom_third .big-bottom-container .green-button p{
@@ -334,6 +383,13 @@ input:checked + label {
   border-radius: 3px;
   width: 200px;
   background-color: #87D035;
+}
+
+
+@media screen and (max-width: 1400px){
+  .bottom_third .big-bottom-container li h3{
+    font-size: 11em;  /*why isn't this working?*/
+  }
 }
 
 /*End bottom third/////////////////////////////////*/

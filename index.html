@@ -49,7 +49,7 @@
   <label for="tab1"><p>FLIGHTS</p></label>
     
   <input id="tab2" type="radio" name="tabs">
-  <label for="tab2"><p>HOTELS</p></label>
+  <label for="tab2"><p>LODGING</p></label>
     
   <input id="tab3" type="radio" name="tabs">
   <label for="tab3"><p>CARS</p></label>
@@ -66,8 +66,8 @@
         </ul>
 
         <ul class="tab-container">  
-           <li><button class="button city">CHI</button></li>
-           <li><button class="button city">TO</button></li>
+           <li><button class="button city">from: airport or city</button></li>
+           <li><button class="button city">to: airport or city</button></li>
            <li><button class="button calendar">5/19</button></li>
            <li><button class="button calendar">5/21</button></li>
            <li><button class="button economy">1, economy</button></li>
@@ -82,11 +82,13 @@
   <section id="content2">
      <div class="tab-content"> 
        <ul class="tab-container">
-           <li><p> </p></li>
+           <div id="hidden">
+           <li><p>hidden content</p></li>
+           </div>
         </ul>
 
         <ul class="tab-container">  
-           <li><button class="button city">WHERE</button></li>
+           <li><button class="button city">where: choose city</button></li>
            <li><button class="button calendar">5/19</button></li>
            <li><button class="button calendar">5/21</button></li>
            <li><button class="button economy">1 room, 2 guests</button></li>
@@ -105,7 +107,7 @@
         </ul>
 
         <ul class="tab-container">  
-           <li><button class="button city">WHERE</button></li>
+           <li><button class="button city">where: choose city</button></li>
            <li><button class="button calendar">5/19</button></li>
            <li><button class="button calendar">5/21</button></li>
            <li><button class="button calendar">5/19</button></li>
@@ -117,65 +119,6 @@
 <section class="content" id="content1">
     
 </div>
-
-
-
-
-
-
-
-
-
-
-<!-- <div class="tabs">
-    
-   <div class="tab">
-       <input type="radio" id="tab-1" name="tab-group-1" checked>
-       <label for="tab-1">FLIGHTS</label>
-       
-     <div class="tab-content"> 
-       <ul class="tab-container">
-           <li id="round-trip"><p>round trip</p></li>
-           <li><p>one-way</p></li>
-           <li><p>multi-city</p></li>
-           <li><p>show flexible dates</p></li>
-        </ul>
-
-        <ul class="tab-container">  
-           <li><button class="button city">CHI</button></li>
-           <li><button class="button city">TO</button></li>
-           <li><button class="button calendar">5/19</button></li>
-           <li><button class="button calendar">5/21</button></li>
-           <li><button class="button economy">1, economy</button></li>
-           <li><button class="button search">search</button></li>
-        </ul>
-      </div>
-    </div> 
-
-<div class="tab">
-       <input type="radio" id="tab-2" name="tab-group-1">
-       <label for="tab-2">HOTELS</label>
-       
-     <div class="tab-content"> 
-       <ul class="tab-container">
-           <li id="round-trip"><p>hotel</p></li>
-           <li><p>hotel</p></li>
-           <li><p>hotel</p></li>
-           <li><p>hotel</p></li>
-        </ul>
-
-        <ul class="tab-container">  
-           <li><button class="button city">CHI</button></li>
-           <li><button class="button city">TO</button></li>
-           <li><button class="button calendar">5/19</button></li>
-           <li><button class="button calendar">5/21</button></li>
-           <li><button class="button economy">1, economy</button></li>
-           <li><button class="button search">search</button></li>
-        </ul>
-      </div>
-    </div> 
-
-</div> -->
     
 
 <!-- END TAB SECTION ///////////////////////////////////////// -->
