@@ -1,13 +1,13 @@
-/*@import "compass/css3";*/
-
-/** {
-	outline: 2px red solid;
-}*/
+@import "compass/css3";
 
 body {
   color: white;
   font-family: 'Amatic SC', sans-serif;
   font-size: 12px; }
+
+/**{
+  outline: red solid 1px;
+}*/
 
 
 /*Start top third/////////////////////////////////*/
@@ -104,7 +104,7 @@ section {
   border-top: 1px solid #ddd;
 }
 
-input {
+.tabs input {
   display: none;
 }
 
@@ -148,12 +148,99 @@ label p{
   justify-content: flex-start;
 }
 
+.content .tab-container input{
+  display: inline-block;
+  margin: 10px 10px 0 15px;
+}
+
+.content .tab-container select{
+  display: inline-block;
+  margin: 6px 50px 0 8px;
+}
+
+
+.choices .tab-container li input[type="text"], [type="date"], [type="submit"]{
+  color: grey;
+  padding: 8px 5px 8px 10px;
+  border-radius: 4px;
+  font-family: 'Lato';
+  font-weight: 300;
+  font-size: .8em;
+  border: 1px solid #D3D3D3;
+  height: 30px;
+}
+
+.choices .tab-container li input[type="submit"]{
+  margin-top: 30px;
+}
+
+.choices .tab-container li input[type="text"]{
+  width: 170px;
+}
+
+.content .choices .tab-container li input[type="date"] {
+::-webkit-datetime-edit-fields-wrapper { background: silver; }
+::-webkit-datetime-edit-text { color: black; }
+::-webkit-datetime-edit-month-field { color: black; }
+::-webkit-datetime-edit-day-field { color: black; }
+::-webkit-datetime-edit-year-field { color: black; }
+::-webkit-inner-spin-button { display: none; }
+::-webkit-calendar-picker-indicator { background: none; }
+}
+
+
+/*end date picker styles////////////////////////////*/
+
+/*start select adult/child number styles////////////////////////////*/
+
+
+.select-style select {
+    padding: 2px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.tabs .tab-content .choices .tab-container .select-style {
+    color: grey;
+    border-radius: 4px;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: .8em;
+    border: 1px solid #D3D3D3;
+    overflow: hidden;
+    background-color: white;
+    background: white url("../images/arrowdown.gif") no-repeat 90% 50%;
+    margin: 10px 10px 0 15px;
+    height: 28px;
+}
+
+.select-style select:focus {
+    outline: none;
+}
+
+/*end select adult/child number styles////////////////////////////*/
+
 .tab-container li p{
   font-family: 'Lato';
   font-size: 1.5em;
   font-weight: 100;
   padding-right: 25px;
   padding-left: 15px;
+}
+
+.choices{
+  margin-top: 10px;
+}
+
+.choices .tab-container li p{
+  color: white;
+  font-size: 1.2em;
 }
 
 .tab-content .tab-container #hidden li p{
@@ -164,11 +251,11 @@ label p{
     background-color: #ffffff;
     border: none;
     color: black;
-    padding: 10px 20px;
+    /*padding: 10px 20px;*/
     text-align: left;
     text-decoration: none;
     font-size: 16px;
-    margin: 25px 15px 5px 15px;
+    /*margin: 25px 15px 5px 15px;*/
     cursor: pointer;
     border-radius: 3px;
     box-shadow: 1px 2px 10px grey;
@@ -178,8 +265,7 @@ label p{
 .search{
   background-color: #87D035;
   color: white; 
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 1px 50px;
 }
 
 label:hover {
@@ -201,6 +287,14 @@ input:checked + label {
   display: block;
   background-color: hsla(195, 195%, 195%, 0.60);
   padding: 30px 0 20px 20px; 
+}
+
+#tab3:checked ~ #content3{
+padding: 5px 0 15px 20px
+}
+
+#content3 li{
+  padding-top: 10px;
 }
 
 @media screen and (max-width: 650px) {
