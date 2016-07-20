@@ -113,8 +113,10 @@ section {
   background: grey;
   color: white;
   padding: 0; 
-  border: 1px solid #ccc; 
-  /*margin-left: -1px; */
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
   left: 1px; 
   bottom: 0px;
   font-family: 'Lato';
@@ -122,6 +124,7 @@ section {
   font-size: 1.4em;
   float: left;
 }
+
 
 label p{
   font-family: 'Lato';
